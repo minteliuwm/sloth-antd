@@ -17,11 +17,11 @@ import Icon from '../icon';
 import omit from 'omit.js';
 
 const TreeSelect = {
-  TreeNode: { ...TreeNode, name: 'ATreeSelectNode' },
+  TreeNode: { ...TreeNode, name: 'STreeSelectNode' },
   SHOW_ALL,
   SHOW_PARENT,
   SHOW_CHILD,
-  name: 'ATreeSelect',
+  name: 'STreeSelect',
   props: initDefaultProps(TreeSelectProps(), {
     transitionName: 'slide-up',
     choiceTransitionName: 'zoom',

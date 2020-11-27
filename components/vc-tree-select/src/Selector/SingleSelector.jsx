@@ -23,10 +23,10 @@ const SingleSelector = {
       let innerNode;
 
       if (selectorValueList.length) {
-        const { label, value } = selectorValueList[0];
+        const { value } = selectorValueList[0];
         innerNode = (
-          <span key="value" title={toTitle(label)} class={`${prefixCls}-selection-selected-value`}>
-            {label || value}
+          <span key="value" title={toTitle(value)} class={`${prefixCls}-selection-selected-value`}>
+            {value}
           </span>
         );
       } else {

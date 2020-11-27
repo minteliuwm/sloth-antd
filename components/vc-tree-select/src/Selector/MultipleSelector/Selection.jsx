@@ -23,8 +23,8 @@ const Selection = {
   },
 
   render() {
-    const { prefixCls, maxTagTextLength, label, value } = this.$props;
-    let content = label || value;
+    const { prefixCls, maxTagTextLength, value } = this.$props;
+    let content = value;
     if (maxTagTextLength && typeof content === 'string' && content.length > maxTagTextLength) {
       content = `${content.slice(0, maxTagTextLength)}...`;
     }
@@ -35,7 +35,7 @@ const Selection = {
         {...{ attrs: UNSELECTABLE_ATTRIBUTE }}
         role="menuitem"
         class={`${prefixCls}-selection__choice`}
-        title={toTitle(label)}
+        title={toTitle(value)}
       >
         {getListeners(this).remove && (
           <span class={`${prefixCls}-selection__choice__remove`} onClick={this.onRemove}>
