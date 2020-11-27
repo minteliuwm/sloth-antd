@@ -128,7 +128,7 @@ import { default as TreeSelect } from './tree-select';
 
 // import { default as Upload } from './upload';
 
-// import { default as version } from './version';
+import { default as version } from './version';
 
 // import { default as Drawer } from './drawer';
 
@@ -237,7 +237,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export {
   // Base,
-  // version,
+  version,
   // install,
   // message,
   // notification,
